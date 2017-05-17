@@ -1,0 +1,50 @@
+
+<view class="bannerWrapper">
+	<image src="{{bannerUrl}}" mode="{mode}"></image>
+</view>
+
+<!--switch tabs-->
+<view class="swiper-tab">
+	<view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="switchNav">正在热映</view>
+	<view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="switchNav">即将上映</view>
+</view>	
+<view wx:for="{{subjects}}" wx:for-item="items" class="movieItem">
+	<view class="description">
+		<view class="title">
+			<text>{{items.title}}</text>
+		</view>
+		<!--genres-->
+		<view>
+			<view wx:for="{{items.genres}}" wx:for-item="items" class="genres">
+				<text>{{items}}</text>
+				<image src="{{genreUrl}}" class="genreIcon"></image>
+			</view>
+		</view>
+		<!--star rater-->
+		<view class="rating">
+		    <view class="rating-star allstar{{items.rating.average | 0}}"></view>
+		    <text class="rating-average">{{items.rating.average}}</text>
+	  	</view>
+	  	<!--director-->
+	  	<view class="director">
+		  	<text>导演:</text>
+		  	{{items.directors[0].name}}
+	  	</view>
+	  	<!--actors-->
+	  	<view class="actors">
+	  		<text class="casts">主演：</text>
+	  		<text wx:for="{{items.casts}}" wx:for-item="items" class="casts">{{items.name}}/</text>
+	  	</view>
+	  	<!--collect counts-->
+	  	<view class="collectCount">
+	  		<text class="count">{{items.collect_count}}</text>
+	  		<text>人看过</text>
+	  	</view>
+	</view>
+	<view class="imageWrapper">
+		<image src="{{items.images.large}}" class="movieImage"></image>
+	</view>
+</view>
+
+
+

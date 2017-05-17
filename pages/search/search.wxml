@@ -1,0 +1,20 @@
+<view class="search">
+	<view class="session-search session-search-spacing">
+		<icon class="search-icon" type="search" size="16"></icon>
+		<input class="search-content" placeholder-class="search-placeholder" bindinput="bindSearchInput" placeholder="搜索电影" value="{{searchValue}}" />
+		<block>
+			<text class="search-cancel">取消</text>
+		</block>
+	</view>
+	<view class="searchResult">
+		<view class="searchTips">
+			<text>{{searchResult.title}}</text>
+			<text>共{{searchResult.count}}个</text>
+		</view>
+		<view wx: for="{{searchResult.subjects}}" wx:for-item="{{items}}">
+			<view>{{items.title}}</view>
+			<view>{{items.rating.average}}</view>
+			<view>{{items.year}}</view>
+		</view>
+	</view>
+</view>

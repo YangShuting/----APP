@@ -1,0 +1,165 @@
+.bannerWrapper > image{
+  height: 400rpx;
+  width: 700rpx;
+}
+
+/**switch tab 的样式**/
+.swiper-tab{
+  width: 100%;
+  text-align: center;
+  line-height: 80rpx;
+}
+.swiper-tab-list{
+  display: inline-block;  
+    width: 50%;  
+    color: #777777;  
+
+}
+.on{ 
+  color: #11cd6e;  
+  border-bottom: 5rpx solid #a9b7b7;
+}
+
+/**banner图片居中**/
+.bannerWrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.swiper-box{
+	width: 80%;
+	min-height: 60%;
+}
+.movieItem{
+	display: flex;
+    margin: 80rpx 50rpx;
+}
+.description{
+	order: 2;
+	margin-left:40rpx;
+	display: block;
+	width: auto;
+}
+.movieImage{
+	height: 320rpx;
+	width: 240rpx;
+}
+.imageWrapper{
+	order: 1;
+	margin-right: 10rpx;
+}
+.title{
+	font-size: 45rpx;
+	text-overflow: ellipsis;
+	white-space:nowrap;
+	overflow:hidden;
+	width: 420rpx;
+}
+.genres{
+	font-size: 30rpx;
+	display: inline-block;
+	margin: 5rpx;
+}
+.genreIcon{
+	width:20rpx;
+	height:20rpx;
+}
+/**star rater**/
+
+.rating {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+}
+
+.rating-star {
+  content: "";
+  display: inline-block;
+  width: 55px;
+  height: 11px;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-image: url(http://7xrd7g.com1.z0.glb.clouddn.com/ic_rating_s.png);
+  order: 1;
+}
+
+.allstar10 {
+  background-position: 0px 0px;
+}
+
+.allstar9 {
+  background-position: 0px -11px;
+}
+
+.allstar8 {
+  background-position: 0px -22rpx;
+}
+
+.allstar7 {
+  background-position: 0px -33px;
+}
+
+.allstar6 {
+  background-position: 0px -44px;
+}
+
+.allstar5 {
+  background-position: 0px -55px;
+}
+
+.allstar4 {
+  background-position: 0px -66px;
+}
+
+.allstar3 {
+  background-position: 0px -77px;
+}
+
+.allstar2 {
+  background-position: 0px -88px;
+}
+
+.allstar1 {
+  background-position: 0px -99px;
+}
+
+.allstar0 {
+  background-position: 0px -110px;
+}
+
+.rating-average {
+  margin-left: 140rpx;
+  font-size: 30rpx;
+  line-height: 22rpx;
+  color: #878787;
+  height: 22rpx;
+  order: 2;
+  margin-top: 10rpx;
+}
+.director{
+	font-size: 30rpx;
+	font-weight: 400;
+	margin: 10rpx 1rpx;
+}
+.actors{
+	font-size: 30rpx;
+	width: 400rpx;
+}
+.casts{
+	display: inlie;
+}
+
+.collectCount{
+	margin-top: 10rpx;
+	color: #ffcc33;
+	font-size: 35rpx;
+}
+.collectCount .count{
+	margin-right: 5rpx;
+}
+
+	
+ 
